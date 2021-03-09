@@ -2,14 +2,20 @@ using System;
 
 namespace AVI.Clima.WebApi
 {
-    public class WeatherForecast
+    public record WeatherForecast
     {
-        public DateTime Date { get; set; }
+        public DateTime Date { get; init; }
 
-        public int TemperatureC { get; set; }
+        public int TemperatureC { get; init; }
 
-        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+        public int TemperatureF => Convert.ToInt32(TemperatureC / 0.5556) + 32;
 
-        public string Summary { get; set; }
+        public int Humidity { get; init; }
+
+        public int RainProbability { get; init; }
+
+        public int Wind { get; init; }
+
+        public string Summary { get; init; }
     }
 }

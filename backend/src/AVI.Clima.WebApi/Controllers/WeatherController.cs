@@ -1,6 +1,7 @@
 ﻿using AVI.Clima.DTOs.Requests.Weather;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System.Threading.Tasks;
 
 namespace AVI.Clima.WebApi.Controllers
@@ -10,10 +11,12 @@ namespace AVI.Clima.WebApi.Controllers
     public class WeatherController : ControllerBase
     {
         private readonly IMediator _mediator;
+        private readonly ILogger _logger;
 
-        public WeatherController(IMediator mediator)
+        public WeatherController(IMediator mediator, ILogger logger)
         {
             _mediator = mediator;
+            _logger = logger;
         }
 
         [HttpGet]

@@ -1,6 +1,7 @@
 ﻿using AVI.Clima.DTOs.Requests.Forecast;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System.Threading.Tasks;
 
 namespace AVI.Clima.WebApi.Controllers
@@ -10,10 +11,12 @@ namespace AVI.Clima.WebApi.Controllers
     public class ForecastController : ControllerBase
     {
         private readonly IMediator _mediator;
+        private readonly ILogger _logger;
 
-        public ForecastController(IMediator mediator)
+        public ForecastController(IMediator mediator, ILogger logger)
         {
             _mediator = mediator;
+            _logger = logger;
         }
 
         [HttpGet]

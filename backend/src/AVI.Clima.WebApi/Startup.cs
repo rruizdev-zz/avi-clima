@@ -1,3 +1,4 @@
+using AVI.Clima.Infrastructure.Database;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -19,8 +20,12 @@ namespace AVI.Clima.WebApi
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddControllers(); 
+
             services.AddMediatR(typeof(Startup));
+
+            services.AddSingleton(new DatabaseConfig { Name = Configuration["DatabaseName"] });
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "AVI.Clima.WebApi", Version = "v1" });

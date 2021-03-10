@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AVI.Clima.DTOs\AVI.Clima.DTOs.csproj" />
+    <ProjectReference Include="..\AVI.Clima.Infrastructure\AVI.Clima.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

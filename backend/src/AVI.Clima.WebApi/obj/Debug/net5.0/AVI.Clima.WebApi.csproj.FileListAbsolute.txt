@@ -27,3 +27,7 @@ C:\Users\rruiz\source\repos\avi-clima\backend\src\AVI.Clima.WebApi\obj\Debug\net
 C:\Users\rruiz\source\repos\avi-clima\backend\src\AVI.Clima.WebApi\obj\Debug\net5.0\ref\AVI.Clima.WebApi.dll
 C:\Users\rruiz\source\repos\avi-clima\backend\src\AVI.Clima.WebApi\obj\Debug\net5.0\AVI.Clima.WebApi.pdb
 C:\Users\rruiz\source\repos\avi-clima\backend\src\AVI.Clima.WebApi\obj\Debug\net5.0\AVI.Clima.WebApi.genruntimeconfig.cache
+C:\Users\rruiz\source\repos\avi-clima\backend\src\AVI.Clima.WebApi\bin\Debug\net5.0\MediatR.dll
+C:\Users\rruiz\source\repos\avi-clima\backend\src\AVI.Clima.WebApi\bin\Debug\net5.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\rruiz\source\repos\avi-clima\backend\src\AVI.Clima.WebApi\bin\Debug\net5.0\AVI.Clima.DTOs.dll
+C:\Users\rruiz\source\repos\avi-clima\backend\src\AVI.Clima.WebApi\bin\Debug\net5.0\AVI.Clima.DTOs.pdb

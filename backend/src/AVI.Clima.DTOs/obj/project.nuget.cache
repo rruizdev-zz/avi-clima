@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "DyTUSwFg4BYak79bf5XZj0EoXM7VUrM9Kw0iXg97GAhHqko99dzJSjAfQkrQVSu+5+cT43V9ylfHD2gSA2DUVQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rruiz\\source\\repos\\avi-clima\\backend\\src\\AVI.Clima.DTOs\\AVI.Clima.DTOs.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rruiz\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

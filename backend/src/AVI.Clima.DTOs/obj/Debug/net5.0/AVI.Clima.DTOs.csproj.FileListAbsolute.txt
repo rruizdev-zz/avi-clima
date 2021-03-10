@@ -1,0 +1,11 @@
+C:\Users\rruiz\source\repos\avi-clima\backend\src\AVI.Clima.DTOs\bin\Debug\net5.0\AVI.Clima.DTOs.deps.json
+C:\Users\rruiz\source\repos\avi-clima\backend\src\AVI.Clima.DTOs\bin\Debug\net5.0\AVI.Clima.DTOs.dll
+C:\Users\rruiz\source\repos\avi-clima\backend\src\AVI.Clima.DTOs\bin\Debug\net5.0\ref\AVI.Clima.DTOs.dll
+C:\Users\rruiz\source\repos\avi-clima\backend\src\AVI.Clima.DTOs\bin\Debug\net5.0\AVI.Clima.DTOs.pdb
+C:\Users\rruiz\source\repos\avi-clima\backend\src\AVI.Clima.DTOs\obj\Debug\net5.0\AVI.Clima.DTOs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rruiz\source\repos\avi-clima\backend\src\AVI.Clima.DTOs\obj\Debug\net5.0\AVI.Clima.DTOs.AssemblyInfoInputs.cache
+C:\Users\rruiz\source\repos\avi-clima\backend\src\AVI.Clima.DTOs\obj\Debug\net5.0\AVI.Clima.DTOs.AssemblyInfo.cs
+C:\Users\rruiz\source\repos\avi-clima\backend\src\AVI.Clima.DTOs\obj\Debug\net5.0\AVI.Clima.DTOs.csproj.CoreCompileInputs.cache
+C:\Users\rruiz\source\repos\avi-clima\backend\src\AVI.Clima.DTOs\obj\Debug\net5.0\AVI.Clima.DTOs.dll
+C:\Users\rruiz\source\repos\avi-clima\backend\src\AVI.Clima.DTOs\obj\Debug\net5.0\ref\AVI.Clima.DTOs.dll
+C:\Users\rruiz\source\repos\avi-clima\backend\src\AVI.Clima.DTOs\obj\Debug\net5.0\AVI.Clima.DTOs.pdb

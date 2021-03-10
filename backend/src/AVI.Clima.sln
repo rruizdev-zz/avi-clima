@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AVI.Clima.WebApi", "AVI.Clima.WebApi\AVI.Clima.WebApi.csproj", "{C8D73E8A-205B-4D06-8417-F4EBB6D664C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AVI.Clima.WebApi", "AVI.Clima.WebApi\AVI.Clima.WebApi.csproj", "{C8D73E8A-205B-4D06-8417-F4EBB6D664C7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{45B3CBC1-6CC4-4102-83BD-5A5AD930A49A} = {45B3CBC1-6CC4-4102-83BD-5A5AD930A49A}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AVI.Clima.DTOs", "AVI.Clima.DTOs\AVI.Clima.DTOs.csproj", "{45B3CBC1-6CC4-4102-83BD-5A5AD930A49A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +20,10 @@ Global
 		{C8D73E8A-205B-4D06-8417-F4EBB6D664C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8D73E8A-205B-4D06-8417-F4EBB6D664C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8D73E8A-205B-4D06-8417-F4EBB6D664C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45B3CBC1-6CC4-4102-83BD-5A5AD930A49A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45B3CBC1-6CC4-4102-83BD-5A5AD930A49A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45B3CBC1-6CC4-4102-83BD-5A5AD930A49A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45B3CBC1-6CC4-4102-83BD-5A5AD930A49A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

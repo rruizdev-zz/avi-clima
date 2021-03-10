@@ -4,14 +4,14 @@
     "C:\\Users\\rruiz\\source\\repos\\avi-clima\\backend\\src\\AVI.Clima.WebApi\\AVI.Clima.WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rruiz\\source\\repos\\avi-clima\\backend\\src\\AVI.Clima.WebApi\\AVI.Clima.WebApi.csproj": {
+    "C:\\Users\\rruiz\\source\\repos\\avi-clima\\backend\\src\\AVI.Clima.DTOs\\AVI.Clima.DTOs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rruiz\\source\\repos\\avi-clima\\backend\\src\\AVI.Clima.WebApi\\AVI.Clima.WebApi.csproj",
-        "projectName": "AVI.Clima.WebApi",
-        "projectPath": "C:\\Users\\rruiz\\source\\repos\\avi-clima\\backend\\src\\AVI.Clima.WebApi\\AVI.Clima.WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\rruiz\\source\\repos\\avi-clima\\backend\\src\\AVI.Clima.DTOs\\AVI.Clima.DTOs.csproj",
+        "projectName": "AVI.Clima.DTOs",
+        "projectPath": "C:\\Users\\rruiz\\source\\repos\\avi-clima\\backend\\src\\AVI.Clima.DTOs\\AVI.Clima.DTOs.csproj",
         "packagesPath": "C:\\Users\\rruiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rruiz\\source\\repos\\avi-clima\\backend\\src\\AVI.Clima.WebApi\\obj\\",
+        "outputPath": "C:\\Users\\rruiz\\source\\repos\\avi-clima\\backend\\src\\AVI.Clima.DTOs\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rruiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,78 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\rruiz\\source\\repos\\avi-clima\\backend\\src\\AVI.Clima.WebApi\\AVI.Clima.WebApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\rruiz\\source\\repos\\avi-clima\\backend\\src\\AVI.Clima.WebApi\\AVI.Clima.WebApi.csproj",
+        "projectName": "AVI.Clima.WebApi",
+        "projectPath": "C:\\Users\\rruiz\\source\\repos\\avi-clima\\backend\\src\\AVI.Clima.WebApi\\AVI.Clima.WebApi.csproj",
+        "packagesPath": "C:\\Users\\rruiz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rruiz\\source\\repos\\avi-clima\\backend\\src\\AVI.Clima.WebApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\rruiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\rruiz\\source\\repos\\avi-clima\\backend\\src\\AVI.Clima.DTOs\\AVI.Clima.DTOs.csproj": {
+                "projectPath": "C:\\Users\\rruiz\\source\\repos\\avi-clima\\backend\\src\\AVI.Clima.DTOs\\AVI.Clima.DTOs.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"

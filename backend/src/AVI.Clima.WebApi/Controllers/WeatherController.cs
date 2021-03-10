@@ -19,11 +19,11 @@ namespace AVI.Clima.WebApi.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            return Ok(await _mediator.Send(new GetAllWeatherRequest()));
+            return Ok(await _mediator.Send(new GetAllRequest()));
         }
 
         [HttpGet]
-        public async Task<IActionResult> Get([FromBody] GetWeatherRequest request)
+        public async Task<IActionResult> Get([FromBody] GetRequest request)
         {
             return Ok(await _mediator.Send(request));
         }

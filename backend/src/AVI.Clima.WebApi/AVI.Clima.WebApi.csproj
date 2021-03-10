@@ -11,10 +11,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Services\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\AVI.Clima.DTOs\AVI.Clima.DTOs.csproj" />
   </ItemGroup>
 

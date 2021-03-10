@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AVI.Clima.DTOs.Responses.Forecast
+namespace AVI.Clima.DTOs.Responses.Weather
 {
-    public class GetAllForecastResponse
+    public class GetResponse
     {
     }
 }

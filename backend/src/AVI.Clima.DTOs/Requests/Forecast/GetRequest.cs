@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace AVI.Clima.DTOs.Requests.Forecast
 {
-    public class GetForecastRequest : IRequest<GetForecastResponse>
+    public class GetRequest : IRequest<GetResponse>
     {
     }
 }

@@ -3,7 +3,7 @@ using MediatR;
 
 namespace AVI.Clima.DTOs.Requests.Forecast
 {
-    public class GetAllForecastRequest : IRequest<GetAllForecastResponse>
+    public class GetAllRequest : IRequest<GetAllResponse>
     {
     }
 }

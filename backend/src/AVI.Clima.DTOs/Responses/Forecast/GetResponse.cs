@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AVI.Clima.DTOs.Responses.Forecast
 {
-    public class GetForecastResponse
+    public class GetResponse
     {
     }
 }

@@ -1,11 +1,10 @@
-﻿using AutoMapper;
-using AVI.Clima.DTOs.Responses.Weather;
+﻿using AVI.Clima.DTOs.Responses.Weather;
 using AVI.Clima.Infrastructure.Models;
 using System.Collections.Generic;
 
 namespace AVI.Clima.WebApi.Mapper
 {
-    public class WeatherProfile : Profile
+    public class WeatherProfile : BaseProfile
     {
         public WeatherProfile()
         {
@@ -15,7 +14,5 @@ namespace AVI.Clima.WebApi.Mapper
             CreateMap<IEnumerable<GetResponse>, GetAllResponse>()
                 .ForMember(x => x.Registrys, y => y.MapFrom(z => z));
         }
-
-        private static decimal ToFahrenheit(decimal celsiusTemperature) => (celsiusTemperature * 9) / 5 + 32;
     }
 }

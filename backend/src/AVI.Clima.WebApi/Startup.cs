@@ -1,4 +1,3 @@
-using AVI.Clima.Infrastructure.Database;
 using AVI.Clima.Infrastructure.Repositories;
 using AVI.Clima.WebApi.Mapper;
 using MediatR;
@@ -29,8 +28,6 @@ namespace AVI.Clima.WebApi
             services.AddControllers(); 
 
             services.AddMediatR(typeof(Startup));
-
-            services.AddSingleton(new DatabaseConfig { Name = Configuration["DatabaseName"] });
 
             services.AddSwaggerGen(c =>
             {

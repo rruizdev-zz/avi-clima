@@ -11,12 +11,12 @@ namespace AVI.Clima.WebApi.Controllers
     public class WeatherController : ControllerBase
     {
         private readonly IMediator _mediator;
-        //private readonly ILogger _logger;
+        private readonly ILogger<WeatherController> _logger;
 
-        public WeatherController(IMediator mediator)
+        public WeatherController(IMediator mediator, ILogger<WeatherController> logger)
         {
             _mediator = mediator;
-            //_logger = logger;
+            _logger = logger;
         }
 
         [HttpGet]

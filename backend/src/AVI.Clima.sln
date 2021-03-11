@@ -9,9 +9,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AVI.Clima.WebApi", "AVI.Cli
 		{45B3CBC1-6CC4-4102-83BD-5A5AD930A49A} = {45B3CBC1-6CC4-4102-83BD-5A5AD930A49A}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AVI.Clima.DTOs", "AVI.Clima.DTOs\AVI.Clima.DTOs.csproj", "{45B3CBC1-6CC4-4102-83BD-5A5AD930A49A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AVI.Clima.DTOs", "AVI.Clima.DTOs\AVI.Clima.DTOs.csproj", "{45B3CBC1-6CC4-4102-83BD-5A5AD930A49A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AVI.Clima.Infrastructure", "AVI.Clima.Infrastructure\AVI.Clima.Infrastructure.csproj", "{BA791AB8-A04A-430F-88EA-B0B9390F4D0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AVI.Clima.Infrastructure", "AVI.Clima.Infrastructure\AVI.Clima.Infrastructure.csproj", "{BA791AB8-A04A-430F-88EA-B0B9390F4D0D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{45B3CBC1-6CC4-4102-83BD-5A5AD930A49A} = {45B3CBC1-6CC4-4102-83BD-5A5AD930A49A}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

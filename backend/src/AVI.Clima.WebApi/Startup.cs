@@ -1,4 +1,6 @@
 using AVI.Clima.Infrastructure.Database;
+using AVI.Clima.Infrastructure.Repositories;
+using AVI.Clima.WebApi.Mapper;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -20,6 +22,10 @@ namespace AVI.Clima.WebApi
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMappers();
+
+            services.AddRepositories();
+
             services.AddControllers(); 
 
             services.AddMediatR(typeof(Startup));

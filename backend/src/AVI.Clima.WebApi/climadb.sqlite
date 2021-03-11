@@ -1,0 +1,18 @@
+-- TABLE
+CREATE TABLE "City" ( id INTEGER PRIMARY KEY AUTOINCREMENT, name VARCHAR(60));
+CREATE TABLE "Country" ( id INTEGER PRIMARY KEY AUTOINCREMENT, name VARCHAR(40));
+CREATE TABLE Forecast (id integer primary key, id_city INTEGER not NULL, id_country integer NOT NULL, id_status INTEGER not NULL, celsius_temp DECIMAL(3, 2) , 
+                date datetime , FOREIGN KEY (id_city) REFERENCES City(id), FOREIGN KEY (id_country) REFERENCES Country(id), FOREIGN KEY (id_status) REFERENCES Status(id)
+                     );
+CREATE TABLE sqlite_sequence(name,seq);
+CREATE TABLE Status ( id INTEGER PRIMARY KEY AUTOINCREMENT, name VARCHAR(20));
+CREATE TABLE Weather (id integer primary key, id_city INTEGER not NULL, id_country integer NOT NULL, id_status INTEGER NOT NULL, celsius_temp DECIMAL(3, 2) , rain_probably integer , humidity integer, wind integer
+                date_upload datetime , FOREIGN KEY (id_city) REFERENCES City(id), FOREIGN KEY (id_country) REFERENCES Country(id), FOREIGN KEY (id_status) REFERENCES Status(id)
+                     );
+ 
+-- INDEX
+ 
+-- TRIGGER
+ 
+-- VIEW
+ 

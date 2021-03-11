@@ -1,20 +1,18 @@
 ﻿using System;
 
-namespace AVI.Clima.DTOs.Responses.Weather
+namespace AVI.Clima.Infrastructure.Models
 {
-    public class GetResponse
+    public class Weather
     {
-        public string Country { get; set; }
-
         public string City { get; set; }
+
+        public string Country { get; set; }
 
         public DateTime Date { get; set; }
 
         public string Status { get; set; }
 
-        public decimal TemperatureC { get; set; }
-
-        public decimal TemperatureF { get; set; }
+        public decimal Temperature { get; set; }
 
         public int Rain { get; set; }
 

@@ -3,6 +3,7 @@ using AVI.Clima.DTOs.Requests.Weather;
 using AVI.Clima.DTOs.Responses.Weather;
 using AVI.Clima.Infrastructure.Repositories.Interfaces;
 using MediatR;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -21,9 +22,9 @@ namespace AVI.Clima.WebApi.Services.Weather.GetAll
 
         public async Task<GetAllResponse> Handle(GetAllRequest request, CancellationToken cancellationToken)
         {
-            var currentWeather = await _repository.GetAll();
+            var currentsWeather = await _repository.GetAll();
 
-            return _mapper.Map<GetAllResponse>(currentWeather);
+            return _mapper.Map<GetAllResponse>(currentsWeather.Select(_mapper.Map<GetResponse>));
         }
     }
 }

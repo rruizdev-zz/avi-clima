@@ -8,8 +8,6 @@ namespace AVI.Clima.Infrastructure.Models
 
         public string Country { get; set; }
 
-        public DateTime Date { get; set; }
-
         public string Status { get; set; }
 
         public decimal Temperature { get; set; }

@@ -11,24 +11,24 @@ namespace AVI.Clima.WebApi.Controllers
     public class WeatherController : ControllerBase
     {
         private readonly IMediator _mediator;
-        private readonly ILogger _logger;
+        //private readonly ILogger _logger;
 
-        public WeatherController(IMediator mediator, ILogger logger)
+        public WeatherController(IMediator mediator)
         {
             _mediator = mediator;
-            _logger = logger;
+            //_logger = logger;
         }
 
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> GetAll()
         {
             return Ok(await _mediator.Send(new GetAllRequest()));
         }
 
-        [HttpGet]
-        public async Task<IActionResult> Get([FromBody] GetRequest request)
+        [HttpGet("{idCountry}/{idCity}")]
+        public async Task<IActionResult> Get([FromRoute] int idCountry, [FromRoute] int idCity)
         {
-            return Ok(await _mediator.Send(request));
+            return Ok(await _mediator.Send(new GetRequest(idCountry, idCity)));
         }
     }
 }

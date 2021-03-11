@@ -8,8 +8,6 @@ namespace AVI.Clima.DTOs.Responses.Weather
 
         public string City { get; set; }
 
-        public DateTime Date { get; set; }
-
         public string Status { get; set; }
 
         public decimal TemperatureC { get; set; }

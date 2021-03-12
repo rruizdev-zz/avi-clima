@@ -29,6 +29,8 @@ namespace AVI.Clima.WebApi
 
             services.AddMediatR(typeof(Startup));
 
+            services.AddCors();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "AVI.Clima.WebApi", Version = "v1" });
@@ -43,6 +45,8 @@ namespace AVI.Clima.WebApi
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "AVI.Clima.WebApi v1"));
             }
+
+            app.UseCors(o => o.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
             app.UseRouting();
 

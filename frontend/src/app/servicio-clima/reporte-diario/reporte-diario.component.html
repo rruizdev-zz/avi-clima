@@ -1,1 +1,24 @@
-<p>reporte-diario works!</p>
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Reporte actual</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <div class="col-izq">
+            <p class="pais">{{ weather.country }}</p>
+            <p class="ciudad">{{ weather.city }}</p>
+            <p class="dia">{{ dia }}</p>
+            <p class="estado">{{ weather.status }}</p>
+            <p class="temperaturaC">
+                <span>{{ weather.temperatureC }}</span>
+                <span>ºC</span>
+            </p>
+            <p class="estado">{{ weather.temperatureF }}ºF</p>            
+        </div>
+        <div class="col-der">
+            {{ weather.humidity }}
+            {{ weather.rain }}
+            
+            {{ weather.wind }}
+        </div>
+    </mat-card-content>
+</mat-card>

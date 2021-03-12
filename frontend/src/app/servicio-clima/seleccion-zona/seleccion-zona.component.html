@@ -1,27 +1,28 @@
-<mat-card class="example-card">
+<mat-card>
     <mat-card-header>
         <mat-card-title>Seleccioná la zona</mat-card-title>
     </mat-card-header>
     <mat-card-content>
-        <form [formGroup]="seleccionZona" (onsubmit)="">
+        <form [formGroup]="seleccionZona" (onsubmit)="query()">
             <mat-form-field>
                 <mat-label>Pais</mat-label>
-                <input type="text" placeholder="Seleccioná un país" matInput formControlName="pais" [matAutocomplete]="auto">
-                <mat-autocomplete #auto="matAutocomplete">
-                    <mat-option *ngFor="let pais of paises" [value]="pais">
-                        {{pais}}
+                <input type="text" placeholder="Seleccioná un país" matInput formControlName="pais" [matAutocomplete]="pais">
+                <mat-autocomplete #pais="matAutocomplete">
+                    <mat-option *ngFor="let pais of paises" [value]="pais.id">
+                        {{pais.name}}
                     </mat-option>
                 </mat-autocomplete>
             </mat-form-field>
             <mat-form-field>
                 <mat-label>Ciudad</mat-label>
-                <input type="text" placeholder="Seleccioná una ciudad" matInput formControlName="ciudad" [matAutocomplete]="auto">
-                <mat-autocomplete #auto="matAutocomplete">
-                    <mat-option *ngFor="let ciudad of ciudades" [value]="ciudad">
-                        {{ciudad}}
+                <input type="text" placeholder="Seleccioná una ciudad" matInput formControlName="ciudad" [matAutocomplete]="ciudad">
+                <mat-autocomplete #ciudad="matAutocomplete">
+                    <mat-option *ngFor="let ciudad of ciudades" [value]="ciudad.id">
+                        {{ciudad.name}}
                     </mat-option>
                 </mat-autocomplete>
             </mat-form-field>
+            <button mat-raised-button color="primary" (click)="query()" [disabled]="seleccionZona.invalid">Buscar</button>
         </form>
     </mat-card-content>
 </mat-card>

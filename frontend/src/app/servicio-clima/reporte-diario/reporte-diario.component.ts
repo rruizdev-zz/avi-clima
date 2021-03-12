@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ServicioClimaService, Weather } from '../servicio-clima.service';
 
 @Component({
   selector: 'app-reporte-diario',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./reporte-diario.component.sass']
 })
 export class ReporteDiarioComponent implements OnInit {
+  public weather: Weather;
+  public dia: string = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado']
+    .find((_: string, index: number) => index === new Date().getDay());
 
-  constructor() { }
+  public constructor(private service: ServicioClimaService) { }
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
+    // tslint:disable-next-line: deprecation
+    this.service.weather$.subscribe((weather: Weather) => this.weather = weather);
   }
 
 }

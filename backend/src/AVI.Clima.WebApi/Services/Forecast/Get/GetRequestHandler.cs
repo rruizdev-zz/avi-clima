@@ -21,7 +21,7 @@ namespace AVI.Clima.WebApi.Services.Forecast.Get
 
         public async Task<GetResponse> Handle(GetRequest request, CancellationToken cancellationToken)
         {
-            var forecasts = await _repository.GetAll();
+            var forecasts = await _repository.Get(request);
 
             return _mapper.Map<GetResponse>(forecasts);
         }

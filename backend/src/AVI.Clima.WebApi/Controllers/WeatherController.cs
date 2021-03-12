@@ -8,15 +8,10 @@ namespace AVI.Clima.WebApi.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class WeatherController : ControllerBase
+    public class WeatherController : BaseController<WeatherController>
     {
-        private readonly IMediator _mediator;
-        private readonly ILogger<WeatherController> _logger;
-
-        public WeatherController(IMediator mediator, ILogger<WeatherController> logger)
+        public WeatherController(IMediator mediator, ILogger<WeatherController> logger) : base(mediator, logger)
         {
-            _mediator = mediator;
-            _logger = logger;
         }
 
         [HttpGet]

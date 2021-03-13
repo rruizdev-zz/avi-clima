@@ -8,17 +8,16 @@
             <p class="ciudad">{{ weather.city }}</p>
             <p class="dia">{{ dia }}</p>
             <p class="estado">{{ weather.status }}</p>
-            <p class="temperaturaC">
+            <p class="temperatura">
                 <span>{{ weather.temperatureC }}</span>
                 <span>ºC</span>
             </p>
             <p class="estado">{{ weather.temperatureF }}ºF</p>            
         </div>
         <div class="col-der">
-            {{ weather.humidity }}
-            {{ weather.rain }}
-            
-            {{ weather.wind }}
+            <p class="adicional">Prob. de precipitaciones: {{ weather.rain }}%</p>
+            <p class="adicional">Humedad: {{ weather.humidity }}%</p>
+            <p class="adicional">Viento: a {{ weather.wind }} km/h.</p>
         </div>
     </mat-card-content>
 </mat-card>

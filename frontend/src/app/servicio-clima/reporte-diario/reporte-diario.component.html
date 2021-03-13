@@ -15,6 +15,7 @@
             <p class="estado">{{ weather.temperatureF }}ºF</p>            
         </div>
         <div class="col-der">
+            <img src="{{ weather.status }}" />
             <p class="adicional">Prob. de precipitaciones: {{ weather.rain }}%</p>
             <p class="adicional">Humedad: {{ weather.humidity }}%</p>
             <p class="adicional">Viento: a {{ weather.wind }} km/h.</p>

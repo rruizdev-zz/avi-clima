@@ -13,7 +13,10 @@ export class ReporteSemanalComponent implements OnInit {
 
   public ngOnInit(): void {
     // tslint:disable-next-line: deprecation
-    this.service.forecast$.subscribe((reporte: Forecast) => this.reporte = reporte);
+    this.service.forecast$.subscribe((reporte: Forecast) => {
+      this.reporte = reporte
+      this.reporte.forecasts = reporte.forecasts.reverse()
+    });
   }
 
   public obtenerDia(date: string): string {

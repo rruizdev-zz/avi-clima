@@ -1,10 +1,10 @@
 <mat-card>
     <mat-card-content>
         <div *ngFor="let dia of reporte.forecasts">
-            {{ obtenerDia(dia.date) }}
-            {{ dia.status }}
-            {{ dia.temperatureC }}ºC
-            {{ dia.temperatureF }}ºF
+            <p class="dia">{{ obtenerDia(dia.date) }}</p>
+            <img src="{{ dia.status }}" />
+            <p class="detalle">{{ dia.temperatureC }}ºC</p>
+            <p class="detalle">{{ dia.temperatureF }}ºF</p>            
         </div>
     </mat-card-content>
 </mat-card>

@@ -16,6 +16,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AVI.Clima.Infrastructure", 
 		{45B3CBC1-6CC4-4102-83BD-5A5AD930A49A} = {45B3CBC1-6CC4-4102-83BD-5A5AD930A49A}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AVI.Clima.WebApi.Test", "AVI.Clima.WebApi.Test\AVI.Clima.WebApi.Test.csproj", "{88501819-D193-4D29-8D3A-49D907659B7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AVI.Clima.Infrastructure.Test", "AVI.Clima.Infrastructure.Test\AVI.Clima.Infrastructure.Test.csproj", "{C56913C1-94AF-4096-A44E-63C8ACA4E865}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,6 +38,14 @@ Global
 		{BA791AB8-A04A-430F-88EA-B0B9390F4D0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA791AB8-A04A-430F-88EA-B0B9390F4D0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA791AB8-A04A-430F-88EA-B0B9390F4D0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88501819-D193-4D29-8D3A-49D907659B7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88501819-D193-4D29-8D3A-49D907659B7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88501819-D193-4D29-8D3A-49D907659B7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88501819-D193-4D29-8D3A-49D907659B7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C56913C1-94AF-4096-A44E-63C8ACA4E865}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C56913C1-94AF-4096-A44E-63C8ACA4E865}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C56913C1-94AF-4096-A44E-63C8ACA4E865}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C56913C1-94AF-4096-A44E-63C8ACA4E865}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
